@@ -1,0 +1,18 @@
+Problema: Sistema de Consulta de Razas de Gatos
+Contexto
+
+Una clínica veterinaria desea una aplicación que permita consultar información de diferentes razas de gatos para apoyar el proceso de atención de mascotas y orientar a los propietarios sobre las características de cada raza.
+
+La información no se almacenará localmente, sino que será obtenida desde una API pública llamada The Cat API.
+
+Requerimiento
+
+Desarrollar una API REST con Spring Boot que permita consultar una raza de gato por su nombre y retornar información relevante.
+
+La aplicación consumirá: https://api.thecatapi.com/v1/breeds
+La API devuelve un listado de razas y la aplicación deberá buscar la raza solicitada.
+
+1. Consumo de API: utilizar RestTemplate, consumir la API pública, procesar la respuesta y convertir la información en objetos Java.
+2. Documentar automáticamente cada endpoint para que se pueda probar desde el navegador.
+3. Verificar mediante una prueba unitaria que se retorne la información correctamente. En caso de error, se genere una excepción controlada.
+
